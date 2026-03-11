@@ -1,0 +1,106 @@
+/* Reinicio de los estilos */
+* {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0F0F0F;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: #1D1D1D;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    height: 350px;
+    gap: 40px;
+}
+
+.card h1 {
+    color: #fff;
+}
+
+/* contenedor de los campos */
+.card .campos {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+/* contenedor individual del input */
+.campo {
+    position: relative;
+}
+
+/* input */
+.card .campos input {
+    padding: 10px;
+    border: none;
+    width: 400px;
+    padding-left: 45px;
+    padding-left: 60px;
+    height: 50px;
+    border-radius: 20px;
+    transition: 0.40s ease;
+}
+
+/* icono */
+.bi-person {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: red;
+    z-index: 1;
+}
+
+/* hover botones */
+#principal:hover,
+#secundario:hover {
+    box-shadow: 
+    2px 2px 4px #fff,
+    2px 2px 4px #fff,
+    2px 2px 4px #fff;
+    transform: scale(1.1);
+    transition: 0.40s ease;
+}
+
+.bi-lock {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    color: red;
+    z-index: 1;
+}
+
+
+.container .card button {
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 
+    2px 2px 4px 2px rgb(253, 18, 1),
+    2px 2px 4px 2px rgb(134, 134, 100),
+    2px 2px 4px 2px yellow
+    ;
+}

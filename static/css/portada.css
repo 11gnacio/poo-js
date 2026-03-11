@@ -1,0 +1,134 @@
+/* Reinicio de estilos */
+*{
+    font-family: "Nunito Sans", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+}
+
+header{
+    padding:10px;
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:0 auto;
+    max-width:1200px;
+}
+
+.nav ul{
+    display:flex;
+    align-items:center;
+    gap: 30px;
+}
+
+.nav li{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    list-style:none;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#fff;
+}
+
+.nav a:hover{
+    color:yellow;
+    border-bottom:2px solid #fff;
+}
+
+/* iconos */
+
+.bi-javascript{
+    font-size:48px;
+    color:yellow;
+}
+
+.bi-book,
+.bi-github,
+.bi-instagram{
+    color:#fff;
+    font-size:25px;
+}
+
+/* hamburguesa */
+
+.menu{
+    display:none;
+}
+
+.bi-list{
+    color:#fff;
+    font-size:35px;
+}
+
+/* sección principal */
+
+.principal{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top:100px;
+}
+
+.principal img{
+    width:30%;
+    border-radius:20px;
+}
+
+.principal h2{
+    color:#fff;
+    font-size:35px;
+}
+
+.principal p{
+    color:#fff;
+    font-size:25px;
+}
+
+/* responsive */
+
+@media (max-width:768px){
+
+.menu{
+    display:block;
+}
+
+.nav ul{
+    display:none;
+    position:absolute;
+    top:80px;
+    right:0;
+    width:250px;
+    padding:25px;
+    flex-direction:column;
+    text-align:center;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+}
+
+.nav ul li a{
+    color:#000;
+}
+
+.nav ul.active{
+    display:flex;
+}
+
+}
+
+.isquierda {
+    width: 420px;
+}
+
+span {
+    color: yellow;
+}
