@@ -1,0 +1,157 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+}
+
+header {
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav li {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav a:hover {
+    color: rgb(230, 255, 4);
+    border-bottom: 2px solid #fff;
+}
+
+/* iconos */
+
+.bi-javascript {
+    font-size: 48px;
+    color: yellow;
+}
+
+.bi-house,
+.bi-github,
+.bi-instagram {
+    color: #fff;
+    font-size: 25px;
+    text-shadow:
+        2px 1px 3px #Fff,
+        2px 1px 3px #4e4c4c,
+        2px 1px 3px #888787;
+}
+
+/* hamburguesa */
+
+.menu {
+    display: none;
+}
+
+.bi-list {
+    color: #fff;
+    font-size: 35px;
+}
+
+@media (max-width:768px) {
+
+
+    .menu {
+        display: block;
+    }
+
+    .nav ul {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 250px;
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav ul li a {
+        color: #000;
+    }
+
+    .nav ul.active {
+        display: flex;
+    }
+
+}
+
+section article {
+    color: #fff;
+    text-align: center;
+}
+
+section article h2 {
+    padding: 10px;
+}
+
+section {
+    border: 1px solid yellow;
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    border-radius: 30px;
+}
+
+.container {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.btn {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn button {
+    padding: 10px;
+    width: 130px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 
+    2px 2px 2px 2px rgb(190, 190, 6),
+    2px 2px 2px 2px rgb(165, 165, 154),
+    2px 2px 2px 1px rgb(143, 143, 131);
+    transition: 0.30s ease;
+}
+
+.btn button:hover {
+ transform: scale(1.1);
+}
