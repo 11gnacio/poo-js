@@ -5,6 +5,23 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body {
-    background-color: black;
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+li a {
+    color: #Fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 90%;
 }
