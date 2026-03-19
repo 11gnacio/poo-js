@@ -1,5 +1,7 @@
 console.log("js conectado...");
 
+// Ejercicio 1
+
 let asistencia = [];
 
 function agregarLista(nombre) {
@@ -55,19 +57,68 @@ let entregas = ["Pizza", "Sushi", "Hamburguesa", "Ensalada"];
 
 function delivery() {
     const inputTres = document.getElementById("input3");
-    const resulDos  = document.getElementById("result3");
+    const resulDos = document.getElementById("result3");
     const containerTres = document.getElementById("container3");
-   
+
     let accion = inputTres.value.trim().toLowerCase();
 
     if (accion === "despachar") {
-    entregas.shift();
-} else if (accion === "cancelar") {
-    entregas.pop();
-}
+        entregas.shift();
+    } else if (accion === "cancelar") {
+        entregas.pop();
+    }
     resulDos.textContent = "Pedidos pendientes: " + entregas.join(", ");
 
     containerTres.classList.remove("d-none");
 
     inputTres.value = "";
+}
+
+// Ejercicio 4
+
+let codigosValidos = ["VERANO2026", "PROMO50", "CLIENTEVIP"];
+
+function verificarCodigo() {
+    const inputCuatro = document.getElementById("input4");
+    const resultCuatro = document.getElementById("result4");
+    const containerCuatro = document.getElementById("container4");
+
+    let accion = inputCuatro.value.trim();
+
+    let mensaje = "Codigo invalido";
+
+    for (let i = 0; i < codigosValidos.length; i++) {
+        if (accion == codigosValidos[i]) {
+            mensaje = "Exito";
+        }
+    }
+
+    resultCuatro.textContent = mensaje;
+
+    containerCuatro.classList.remove("d-none");
+
+    inputCuatro.value = "";
+}
+
+// ejercicio 5
+
+function simularCuotas() {
+    const inputCinco = document.getElementById("input5");
+    const resultCinco = document.getElementById("result5");
+    const containerCinco = document.getElementById("container5");
+
+    let accion = inputCinco.value.trim();
+
+    let registroPagos = "";
+
+    for (let i = 0; i < 3; i++) {
+        registroPagos += accion + " - Cuota " + i + " | ";
+    }
+
+    resultCinco.textContent = accion;
+
+    containerCinco.classList.remove("d-none");
+
+    inputCinco.value = "";
+
 }
