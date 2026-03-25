@@ -96,29 +96,32 @@ function verificarCodigo() {
     resultCuatro.textContent = mensaje;
 
     containerCuatro.classList.remove("d-none");
-
+w
     inputCuatro.value = "";
 }
 
 // ejercicio 5
 
-function simularCuotas() {
-    const inputCinco = document.getElementById("input5");
-    const resultCinco = document.getElementById("result5");
-    const containerCinco = document.getElementById("container5");
-
-    let accion = inputCinco.value.trim();
-
+function calcularCuotas(valor, cuota) {
     let registroPagos = "";
-
-    for (let i = 0; i < 3; i++) {
-        registroPagos += accion + " - Cuota " + i + " | ";
+    for (let i = 1; i <= 3; i++) {
+        registroPagos += `Cuota ${i} de ${cuota}: ${parseInt(valor/e)} |`;
     }
+    return registroPagos;
+};
 
-    resultCinco.textContent = accion;
+function simularCuotas() {
+    const producto = document.getElementById("input5");
+    let valorProducto = parseInt(producto, value);
+    const cuotaInput = document.getElementById("input_5");
+    let cuota = parseInt(cuotaInput.value);
+    const result = document.getElementById("result5");
+    const container = document.getElementById("container5");
+    let resultado = calcularCuotas(valorProducto, cuota)
+    result.textContent = resultado;
+    producto.value = "";
+    cuotaInput.value = "";
+    container.classList.remove("d-none");
+};
 
-    containerCinco.classList.remove("d-none");
 
-    inputCinco.value = "";
-
-}
